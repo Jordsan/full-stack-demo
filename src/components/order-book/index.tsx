@@ -153,7 +153,7 @@ const OrderBook = () => {
                 ))
               : getSortedPrecisionConfig(ETH_PRECISION_CONFIGS).map((config) => (
                   <Select.Item key={config.value} value={config.value.toString()}>
-                    {formatNumber(config.value, 1)}
+                    {config.value < 1 ? formatNumber(config.value, 1) : config.value}
                   </Select.Item>
                 ))}
           </Select.Content>
