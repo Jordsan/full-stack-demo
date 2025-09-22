@@ -36,18 +36,3 @@
 - 2 --> values returned to $0.2 accuracy
 - 5 --> values returned to $0.5 accuracy
 
-
-
-
-
-TODO
-x main UI
-x hook in precision
-x follow up UI stuff
-  x hover rows in order book
-  x background shading
-  x $ vs amnt dropdown
-  x spread row 
-- fixed width spread items
-- out of order glitch when changing settings
-x fixes for when swapping symbol and having it not lag before WS conn established

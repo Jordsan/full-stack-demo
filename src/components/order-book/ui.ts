@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const OrderBookContainer = styled.div`
-  width: 400px;
+  width: 380px;
   height: auto;
   border: 1px solid var(--indigo-a9);
   display: flex;
