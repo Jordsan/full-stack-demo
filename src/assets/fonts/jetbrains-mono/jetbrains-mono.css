@@ -1,0 +1,169 @@
+/**
+* @license
+*
+* Font Family: JetBrains Mono
+* Designed by: JetBrains
+* URL: https://www.jetbrains.com/lp/mono/
+* License: SIL Open Font License 1.1
+*
+* JetBrains Mono Thin
+* JetBrains Mono Thin Italic
+* JetBrains Mono ExtraLight
+* JetBrains Mono ExtraLight Italic
+* JetBrains Mono Light
+* JetBrains Mono Light Italic
+* JetBrains Mono Regular
+* JetBrains Mono Italic
+* JetBrains Mono Medium
+* JetBrains Mono Medium Italic
+* JetBrains Mono SemiBold
+* JetBrains Mono SemiBold Italic
+* JetBrains Mono Bold
+* JetBrains Mono Bold Italic
+* JetBrains Mono ExtraBold
+* JetBrains Mono ExtraBold Italic
+*/
+
+/* Thin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Thin Italic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-display: swap;
+  font-style: italic;
+}
+
+/* ExtraLight */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* ExtraLight Italic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-ExtraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-display: swap;
+  font-style: italic;
+}
+
+/* Light */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Medium Italic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+
+/* SemiBold */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* SemiBold Italic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+/* ExtraBold */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* ExtraBold Italic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-ExtraBoldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-display: swap;
+  font-style: italic;
+}

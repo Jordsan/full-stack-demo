@@ -1,42 +1,159 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  overscroll-behavior: none;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  margin: 0px;
+  background-color: #0e0e0e !important;
+  overscroll-behavior: none;
+  font-family: 'Satoshi';
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: var(--gray-a3);
+}
+
+::-webkit-scrollbar-track-piece {
+  background: var(--gray-a3);
+  max-width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-a8);
+  border-radius: 6px;
+  border: 1px solid #262626;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* Radix Overrides */
+
+.radix-themes {
+  --cursor-button: pointer;
+  --cursor-checkbox: default;
+  --cursor-disabled: not-allowed;
+  --cursor-link: pointer;
+  --cursor-menu-item: default;
+  --cursor-radio: default;
+  --cursor-slider-thumb: default;
+  --cursor-slider-thumb-active: default;
+  --cursor-switch: default;
+  --default-font-family: 'Satoshi';
+  --color-background: #0e0e0e;
+  --red-1: #1f1315;
+  --red-2: #291618;
+  --red-3: #3b191d;
+  --red-4: #481a20;
+  --red-5: #551c22;
+  --red-6: #691d25;
+  --red-7: #8c1d28;
+  --red-8: #d21e24;
+  --red-9: #e5484d;
+  --red-10: #f26669;
+  --red-11: #ff8589;
+  --red-12: #ffd1d9;
+  --gray-1: #18181a;
+  --gray-2: #1b1b1f;
+  --gray-3: #27282d;
+  --gray-4: #2e3035;
+  --gray-5: #35373c;
+  --gray-6: #3c3f44;
+  --gray-7: #464b50;
+  --gray-8: #5a6165;
+  --gray-9: #696e77;
+  --gray-10: #787f85;
+  --gray-11: #adb1b8;
+  --gray-12: #edeef0;
+  --gray-a1: rgba(24, 24, 246, 0.009);
+  --gray-a2: rgba(121, 121, 250, 0.031);
+  --gray-a3: rgba(189, 200, 255, 0.091);
+  --gray-a4: rgba(199, 214, 254, 0.126);
+  --gray-a5: rgba(210, 223, 255, 0.156);
+  --gray-a6: rgba(212, 228, 254, 0.191);
+  --gray-a7: rgba(213, 234, 254, 0.243);
+  --gray-a8: rgba(223, 242, 253, 0.334);
+  --gray-a9: rgba(221, 233, 255, 0.412);
+  --gray-a10: rgba(228, 239, 255, 0.494);
+  --gray-a11: rgba(239, 245, 255, 0.693);
+  --gray-a12: rgba(252, 253, 255, 0.936);
+}
+
+.rt-SelectTrigger {
+  border-radius: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  svg {
+    width: 12px;
+    height: 12px;
   }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.rt-SelectTriggerInner {
+  font-size: 12px;
 }
 
-.card {
-  padding: 2em;
+.rt-SelectIcon {
+  transition: transform 200ms;
 }
 
-.read-the-docs {
-  color: #888;
+.rt-SelectTrigger[data-state='open'] .rt-SelectIcon {
+  transform: rotate(180deg) translateY(-1px);
+}
+
+.rt-SelectViewport {
+  padding: 0;
+}
+
+.rt-SelectItem {
+  height: 24px;
+  width: 100%;
+  padding: 0px 12px 0px 24px;
+  border-radius: 0;
+  transition: all 0.15s ease;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.rt-SelectItem[data-highlighted] {
+  background-color: var(--gray-5);
+}
+
+.rt-SelectItem:first-child {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.rt-SelectItem:last-child {
+  border-radius: 0px 0px 8px 8px;
+}
+
+.rt-SelectItem:has(.disconnected-broker-button) {
+  background-color: transparent;
+}
+
+.rt-SelectItem>span:not(.rt-SelectItemIndicator):first-of-type {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.rt-SelectItemIndicator {
+  left: 0px;
 }
