@@ -33,7 +33,7 @@ const Home = () => {
     clearData()
     setSelectedSymbol(value as SymbolOption)
     setSelectedPrecision(value === 'BTC' ? '1' : '0.1')
-    updateParams({ coin: value })
+    updateParams({ coin: value, nSigFigs: null, mantissa: null })
   }
 
   const handleDemoStartStop = () => {
