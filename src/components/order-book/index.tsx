@@ -117,7 +117,7 @@ const OrderBook = () => {
     const spreadPercentage = (spread / ((bestBid.price + bestAsk.price) / 2)) * 100
 
     const formattedSpread = formatNumber(spread, selectedSymbol === 'BTC' ? 0 : 1)
-    const formattedSpreadPercentage = formatNumber(spreadPercentage, 3)
+    const formattedSpreadPercentage = `${formatNumber(spreadPercentage, 3)}%`
 
     return { spread: formattedSpread, spreadPercentage: formattedSpreadPercentage }
   }, [topBids, topAsks, selectedSymbol])
@@ -219,7 +219,7 @@ const OrderBook = () => {
       <OrderBookSpreadRow>
         <OrderBookSpreadRowText>Spread</OrderBookSpreadRowText>
         <OrderBookSpreadRowText>{spreadData.spread}</OrderBookSpreadRowText>
-        <OrderBookSpreadRowText>{spreadData.spreadPercentage}%</OrderBookSpreadRowText>
+        <OrderBookSpreadRowText>{spreadData.spreadPercentage}</OrderBookSpreadRowText>
       </OrderBookSpreadRow>
 
       {/* Bids */}
